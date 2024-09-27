@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/background" >
+
+
+    <ImageView
+        android:id="@+id/reg_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/icon" >
+    </ImageView>
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="331dp"
+        android:layout_height="49dp"
+        android:hint="Введите название фильма"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-medium"
+        android:backgroundTint="@color/light_blue" />
+
+    <Button
+        android:layout_width="331dp"
+        android:layout_height="49dp"
+        android:fontFamily="sans-serif"
+        android:background="@color/light_blue"
+        android:textAlignment="center"
+        android:onClick="findFilm"
+        android:text="Найти фильм"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10sp"
+        > </Button>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10sp">
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+            android:layout_width="175sp"
+            android:layout_height="50sp"
+                android:gravity="center"
+            android:fontFamily="sans-serif"
+            android:text="Название :"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            />
+
+            <TextView
+                android:layout_width="175sp"
+                android:layout_height="50sp"
+                android:gravity="center"
+                android:fontFamily="sans-serif"
+                android:text="Год выпуска :"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="175sp"
+                android:layout_height="50sp"
+                android:gravity="center"
+                android:fontFamily="sans-serif"
+                android:text="Длительность :"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="175sp"
+                android:layout_height="50sp"
+                android:gravity="center"
+                android:fontFamily="sans-serif"
+                android:text="Жанры :"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="175sp"
+                android:layout_height="50sp"
+                android:gravity="center"
+                android:fontFamily="sans-serif"
+                android:text="title"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/year"
+                android:layout_width="175sp"
+                android:layout_height="50sp"
+                android:gravity="center"
+                android:fontFamily="sans-serif"
+                android:text="year"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/runtime"
+                android:layout_width="175sp"
+                android:layout_height="50sp"
+                android:gravity="center"
+                android:fontFamily="sans-serif"
+                android:text="runtime"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/genres"
+                android:layout_width="175sp"
+                android:layout_height="50sp"
+                android:gravity="center"
+                android:fontFamily="sans-serif"
+                android:text="genres"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/poster"
+        android:layout_width="225sp"
+        android:layout_height="225sp"
+        tools:srcCompat="@drawable/icon" />
+
+
+</LinearLayout>
